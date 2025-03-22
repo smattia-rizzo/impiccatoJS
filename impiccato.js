@@ -138,10 +138,12 @@ class GiocoImpiccato {
         
         this.parolaAttuale = this.generatore.estraiParola();
         this.stringaIndovinata = "";
+        let inGrafica = "";
         for (let i = 0; i < this.parolaAttuale.length; i++) {
             this.stringaIndovinata += "_";
+            inGrafica+= "_ "
         }
-        parola.innerHTML = this.stringaIndovinata;
+        parola.innerHTML = inGrafica;
         this.sbagli = 0;
         GiocoImpiccato.cambiaImmagine(this);
         GiocoImpiccato.generaBottoni();
@@ -163,9 +165,14 @@ class GiocoImpiccato {
                 this.stringaIndovinata = tmp;
 
             }
-            parola.innerHTML = this.stringaIndovinata;
-            
         }
+        
+        let inGrafica = "";
+        for (let i = 0; i < this.stringaIndovinata.length; i++) {
+            inGrafica+=this.stringaIndovinata.charAt(i)
+            inGrafica+=" "
+        }
+        parola.innerHTML = inGrafica;
         if (this.parolaAttuale == this.stringaIndovinata) {
             this.vittoria();
             return;
