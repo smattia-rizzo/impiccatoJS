@@ -1,0 +1,32 @@
+*{
+    font-size: 1.1em;
+}
+
+
+
+.nascondi{
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#gioco, #end {
+    display: flex;
+    flex-direction: column;
+}
+#gioco > *, #end > * {
+    margin: auto;
+}
+
+#errore {
+    color: red;
+}
+
+p{
+    padding-top: 5px;
+    padding-bottom: 30px;
+}

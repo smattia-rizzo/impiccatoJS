@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impiccato</title>
+    <link rel="stylesheet" href="impiccato.css">
+</head>
+<body>
+    <header>
+        <p>Player: <span id="giocatore"></span></p>
+        <p>Round persi: <span id="persi"></span></p>
+        <p>Round vinti: <span id="vinti"></span></p>
+        <p>Tempo: <span id="tempo"></span></p>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Player Data</legend>
+            <p>Nome di gioco: <input type="text" id="nickname" name="nickname"><span id="errore"></span></p>
+        </fieldset>
+        <button type="submit">Inizia a giocare</button>
+    </form>
+    <div id="gioco">
+        <img id="immagineGioco" src="" alt="Immagine Impiccato">
+        <p id="parola"></p>
+        <div id="bottoni"></div>
+    </div>
+
+    
+    
+    <div id="end"></div>
+    <script src="impiccato.js"></script>
+</body>
+</html>
